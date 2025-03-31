@@ -1,3 +1,3 @@
 # hackyourfutuere
 
-in this codes please clone the whole data nd then open the index.html
+In this repo, please clone the whole data nd then open the index.html
