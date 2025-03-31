@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+        فروشگاه اینترنتی دیجی کالا
+    </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.flipTimer.js"></script>
+    <link href="css/flipTimer.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="js/index.js"></script>
+
+
+
+
+</head>
+
+<body style="margin: 0px; background: #ccc;">
+
+<style>
+    @font-face {
+        font-family: "yekan";
+        src: url("fonts/yekan.ttf") format('truetype'),
+        url('fonts/yekan.eot?#iefix') format('embeded-opentype');
+    }
+
+    div, span, p, a, li, ul {
+        text-align: right;
+        direction: rtl;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .yekan {
+        font-family: yekan;
+    }
+
+    .fontsm {
+        font-size: 10.3pt;
+    }
+
+    .fontmd {
+        font-size: 11.3pt;
+    }
+
+    .fontlg {
+        font-size: 12.3pt;
+    }
+</style>
+
+
+
+<header style="background-color:#fff; padding-top: 15px; ">
+    <div id="header" style="width: 1200px; height: 100px; margin: 0 auto ">
+
+        <div id="header_right" style="width: 720px; float: right;">
+            <div id="header_right_top" style="height: 40px">
+                <span style="width: 20px; height: 20px; background: url(images/lock.png); display: block; float: right;"></span>
+                <a class="yekan fontsm" href="/login" style="float: right; margin-right: 10px;">
+                    فروشگاه اینترنتی دیجی کالا، وارد شوید
+                </a>
+                <span style="width: 20px; height: 20px; background: url(images/signup.png); display: block; float: right;margin-right: 20px;"></span>
+                <a class="yekan fontsm" href="/register" style="float: right; margin-right: 10px;">
+                    ثبت نام کنید
+                </a>
+            </div>
+            <div id="header_right_bottom" style="height: 50px">
+                <div id="basket_top" style="width: 190px; height: 40px; float: right;">
+                    <div id="basket_top_right"
+                         style="width: 54px; height: 100%; background: #2bd231 url(images/basket.png) no-repeat; background-position: center; float: right; "></div>
+                    <div id="basket_top_left"
+                         style="width: 96px; height: 100%; background: #38a844; float: right; padding: 0 20px;">
+                        <span class="yekan fontsm" style="color: #fff; line-height: 35px;"> سبد خرید </span>
+                        <span class="fontsm"
+                              style="width: 25px; height: 25px; background: #eee; text-align: center;display: block; margin-top:7px; float: left; border-radius: 100%; line-height: 25px; ">0</span>
+                    </div>
+                </div>
+                <div id="search_top"
+                     style="width: 480px; height: 40px; float: right; margin-right: 20px; position: relative;">
+                    <input class="yekan" type="text"
+                           style="width: 480px; height: 36px; margin-right: 2px; border: 1px solid #eee; padding-right: 10px; color: #686664;"
+                           placeholder="محصول، دسته یا برند مورد نظرتان را جستجو کنید..."/>
+
+                    <span style="width: 42px; height: 38px; background: #ccc url(images/search.png) no-repeat; display: block; position: absolute; left: -14px; top: 1px; background-position: center;"></span>
+
+                </div>
+
+            </div>
+        </div>
+        <div id="header_left" style="float: left;">
+            <img src="images/logo.png" style=" height: 80px; width: 210px;">
+        </div>
+
+        <div id="hamburger_btn" style="display: none;">☰</div>
+
+    </div>
+</header>
+
+
+
+
+<nav style="width: 100%; height: 40px; background: #f7f8fa; border-top: 1px solid #ecf3f3; box-shadow: 0 2px 3px #aaa;">
+    <div id="menu_top" style="width: 1200px; height: 40px; margin: auto;">
+        <ul>
+            <li data-time="1">
+                <a class="yekan">
+                    کالای دیجیتال
+                    <span class="menu_down_icon"></span>
+                </a>
+                <ul>
+                    <li data-time="3">
+                        <a class="yekan fontsm">
+                            مویابل
+
+                        </a>
+                        <div class="submenu3"
+                             style="width: 1200px; height: 300px; background: #fff; border-top: 1px solid #eee; position: absolute; right: 0;">
+
+                            <div class="top_menu3_col">
+                                <ul class="top_menu3_col_ul" style="padding: 10px; ">
+                                    <li class="yekan fontsm">گوشی موبایل</li>
+                                    <li class="yekan fontsm">Apple</li>
+                                    <li class="yekan fontsm">Samsung</li>
+                                </ul>
+
+                            </div>
+                            <div class="top_menu3_col"></div>
+                            <div class="top_menu3_col"></div>
+                            <div class="top_menu3_col"></div>
+
+                            <img src="images/mobile.png" width="379" height="335"
+                                 style="position: absolute; left: 2px; bottom: 2px;">
+
+                        </div>
+
+                    </li>
+
+                    <li data-time="4">
+                        <a class="yekan fontsm">
+                            تبلت و کتابخوان
+                        </a>
+                        <div class="submenu3"
+                             style="width: 1200px; height: 300px; background: #fff; border-top: 1px solid #eee; position: absolute; right: 0;">
+
+                            <div class="top_menu3_col">
+                                <ul class="top_menu3_col_ul" style="padding: 10px; ">
+                                    <li class="yekan fontsm">تبلت</li>
+                                    <li class="yekan fontsm">Apple</li>
+                                    <li class="yekan fontsm">Samsung</li>
+                                </ul>
+
+                            </div>
+                            <div class="top_menu3_col"></div>
+                            <div class="top_menu3_col"></div>
+                            <div class="top_menu3_col"></div>
+
+                            <img src="images/tablet-ebook-reader.png" width="379" height="335"
+                                 style="position: absolute; left: 2px; bottom: 2px;">
+
+                        </div>
+                    </li>
+                    <li data-time="5">
+                        <a class="yekan fontsm">
+                            لپ تاپ
+                        </a>
+                    </li>
+
+
+                </ul>
+
+            </li>
+            <li data-time="2">
+                <a class="yekan">
+                    لوازم خانگی
+                    <span class="menu_down_icon"></span>
+                </a>
+                <ul>
+                    <li data-time="6">
+                        <a class="yekan fontsm">
+                            صوتی و تصویری
+                        </a>
+                        <div class="submenu3"
+                             style="width: 1200px; height: 300px; background: #fff; border-top: 1px solid #eee; position: absolute; right: 0;">
+
+                            <div class="top_menu3_col">
+                                <ul class="top_menu3_col_ul" style="padding: 10px; ">
+                                    <li class="yekan fontsm">تلویزیون</li>
+                                    <li class="yekan fontsm">کوچکتر از ۳۲ اینچ</li>
+                                    <li class="yekan fontsm">بین ۳۲ تا ۴۲ اینچ</li>
+                                </ul>
+
+                            </div>
+                            <div class="top_menu3_col"></div>
+                            <div class="top_menu3_col"></div>
+                            <div class="top_menu3_col"></div>
+
+                            <img src="images/video-audio-entertainment.png" width="379" height="335"
+                                 style="position: absolute; left: 2px; bottom: 2px;">
+
+                        </div>
+
+                    </li>
+
+                    <li data-time="7">
+                        <a class="yekan fontsm">
+                            لوازم خانگی برقی
+                        </a>
+
+                    </li>
+
+
+                </ul>
+
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+
+
+
+<div id="main">
+
+    <div id="banner_top">
+        <img src="images/banner.jpg">
+
+    </div>
+    <div id="sidebar_right">
+        <img src="images/Euro2016-290.52.jpg">
+
+        <ul id="digikal_tv" style="padding: 0;">
+            <li>
+                <a>
+                    <img class="image" src="images/TV_100_Innovative_Products.jpg">
+                    <span class="circle">
+                        <img src="images/play.png" class="play_icon">
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img class="image" src="images/Motorola_Moto_360_1_Min_Intro.jpg">
+                    <span class="circle">
+                        <img src="images/play.png" class="play_icon">
+                    </span>
+                </a>
+            </li>
+
+        </ul>
+
+
+        <ul id="sidebar_right_ul" style="padding: 0;">
+            <li>
+                <a>
+                    <img src="images/li1.jpg">
+
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="images/li2.jpg">
+
+                </a>
+            </li>
+            <li>
+                <a>
+                    <img src="images/li3.jpg">
+
+                </a>
+            </li>
+
+        </ul>
+        <div id="last_news_slidebar">
+            <h3 class="yekan fontsm">تازه ترین خبرها</h3>
+            <ul style="padding: 0;">
+                <li>
+                    <a>
+                        <div class="col_right">
+                            <img src="images/SanDisk_Headquarters_Milpitas-60x60.jpg">
+                        </div>
+                        <div class="col_left">
+                            <p class="yekan fontsm">
+                                کارت حافظه های ۲۵۶ گیگابایتی سن دیسک معرفی شده اند.
+                            </p>
+                            <p class="yekan" style="font-size: 9pt; color: #829498;">
+                                پنجشنبه ۱۰ تیر ۱۳۹۵
+                            </p>
+
+                        </div>
+
+                    </a>
+                </li>
+
+                <li>
+                    <a>
+                        <div class="col_right">
+                            <img src="images/iPhone7-headphone-3-60x60.jpg">
+                        </div>
+                        <div class="col_left">
+                            <p class="yekan fontsm">
+                                اولین تصاویر از هدفون آیفون ۷ با پورت لایتینگ لو رفت. </p>
+                            <p class="yekan" style="font-size: 9pt; color: #829498;">
+                                پنجشنبه ۱۰ تیر ۱۳۹۵
+                            </p>
+
+                        </div>
+
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div id="brands_sidebar" style="margin-top: 10px;">
+            <a class="item">
+                <img src="images/x.vision.png">
+            </a>
+            <a class="item">
+                <img src="images/lenovo.png">
+            </a>
+            <a class="item">
+                <img src="images/nivea.png">
+            </a>
+            <a class="item">
+                <img src="images/adata.png">
+            </a>
+            <a class="item">
+                <img src="images/d-link.png">
+            </a>
+            <a class="item">
+                <img src="images/oral-b.png">
+            </a>
+            <a class="item">
+                <img src="images/panasonic.png">
+            </a>
+            <a class="item">
+                <img src="images/asus.png">
+            </a>
+
+        </div>
+
+    </div>
+
+    <div id="contant" style="width: 890px; float: left; margin-top: 10px;">
+        <div id="slider" style="position: relative;">
+
+            <span id="prev"></span>
+
+            <span id="next"></span>
+
+            <div id="slider_img">
+                <a class="item">
+                    <img src="images/slider1.jpg">
+                </a>
+                <a class="item">
+                    <img src="images/slider2.jpg">
+                </a>
+                <a class="item">
+                    <img src="images/slider3.jpg">
+                </a>
+                <a class="item">
+                    <img src="images/slider4.jpg">
+                </a>
+                <a class="item">
+                    <img src="images/slider5.jpg">
+                </a>
+            </div>
+            <div id="slider_navigator">
+                <ul>
+                    <li>
+                        <a class="yekan fontsm">
+                            محصولات کالای خواب
+                        </a>
+                    </li>
+                    <li>
+                        <a class="yekan fontsm" onclick="goToSlide(2)">
+                            لوارم جانبی دوربین
+                        </a>
+                    </li>
+                    <li>
+                        <a class="yekan fontsm">
+                            سری جدید vaio
+                        </a>
+                    </li>
+                    <li>
+                        <a class="yekan fontsm">
+                            کتب معنوی
+                        </a>
+                    </li>
+                    <li>
+                        <a class="yekan fontsm">
+                            لوارم خانگی
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+   
+
+        <div id="services_feature">
+            <ul>
+                <li>
+                    <a class="yekan">
+                        <i style="background-position: -210px -473px;">
+
+                        </i>
+                        ۷ روز ضمانت بازگشت
+                    </a>
+
+                </li>
+                <li>
+                    <a class="yekan">
+                        <i style="background-position: -263px -473px;">
+
+                        </i>
+                        پرداخت در محل
+                    </a>
+
+                </li>
+                <li>
+                    <a class="yekan">
+                        <i style="background-position: -158px -473px;">
+
+                        </i>
+                        ضمانت اضل بودن کالا
+                    </a>
+
+                </li>
+                <li>
+                    <a class="yekan">
+                        <i style="background-position: -320px -473px; width: 30px;">
+
+                        </i>
+                        تحویل اکسپرس
+                    </a>
+
+                </li>
+                <li>
+                    <a class="yekan">
+                        <i style="background-position: -103px -473px;">
+
+                        </i>
+                        تضمین بهترین قیمت
+                    </a>
+
+                </li>
+            </ul>
+
+        </div>
+
+
+        <div id="slider2">
+            <div class="filipTimer">
+                <div class="hours"></div>
+                <div class="minutes"></div>
+                <div class="seconds"></div>
+            </div>
+            <div class="slider2_finished yekan">
+                تمام شد!
+            </div>
+
+
+            <div id="slider2_content">
+
+                <a class="item">
+                    <div class="slider2_content_right">
+                        <p class="title">
+                            جشنواره ماه نو
+                        </p>
+                        <div class="price_info">
+                            <div class="price_info_old yekan">
+                                ۲۵
+                            </div>
+                            <div class="price_info_new yekan">
+                                ۱۸/۵ هزار تومان
+                            </div>
+                            <p class="yekan fontsm" style="float: right; width: 100%; margin: 2px;">
+                                توان: ۲/۵ وات
+                            </p>
+                            <p class="yekan fontsm" style="float: right; width: 100%; margin: 2px;">
+                                مقاوم در برابر ضربه
+                            </p>
+
+
+                        </div>
+
+                    </div>
+                    <div class="slider2_content_left">
+                        <p class="yekan" style="font-size: 15pt; text-align: center;">
+                            بخارپز فلر
+                        </p>
+                        <img src="images/slider2_item1.jpg ">
+
+                    </div>
+                </a>
+                <a class="item">
+                    <div class="slider2_content_right">
+                        <p class="title">
+                            خمیر دندان
+                        </p>
+                        <div class="price_info">
+                            <div class="price_info_old yekan">
+                                ۱۰
+                            </div>
+                            <div class="price_info_new yekan">
+                                ۷ هزار تومان
+                            </div>
+                            <p class="yekan fontsm" style="float: right; width: 100%; margin: 2px;">
+                                قدرت پاک کنندگی بالا
+                            </p>
+                            <p class="yekan fontsm" style="float: right; width: 100%; margin: 2px;">
+                                برای دندانهای حساس
+                            </p>
+
+
+                        </div>
+
+                    </div>
+                    <div class="slider2_content_left">
+                        <p class="yekan" style="font-size: 15pt; text-align: center;">
+                            خمیر دندان
+                        </p>
+                        <img src="images/slider2_2.jpg ">
+
+                    </div>
+                </a>
+
+            </div>
+            <div id="slider2_navigator">
+                <ul>
+                    <li>
+                        <a>
+                            بخارپز فلر
+                        </a>
+
+                    </li>
+                    <li>
+                        <a>
+                            خمیر دندان
+                        </a>
+
+                    </li>
+                    <li>
+                        <a>
+                            گوشی موبایل
+                        </a>
+
+                    </li>
+                    <li>
+                        <a>
+                            لپ تاپ
+                        </a>
+
+                    </li>
+                    <li>
+                        <a>
+                            کیف دستی
+                        </a>
+
+                    </li>
+                    <li>
+                        <a>
+                            مبلمان
+                        </a>
+
+                    </li>
+                    <li>
+                        <a>
+                            لوازم سرمایشی
+                        </a>
+
+                    </li>
+                    <li>
+                        <a>
+                            لوازم گرمایشی
+                        </a>
+
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="sliderscroll">
+
+            <h3>
+                فقط در دیجی کالا
+            </h3>
+            <div class="sliderscroll_content">
+                <div class="sliderscroll_prev">
+                    <span class="prev" onclick="sliderscroll('right',this);"></span>
+                </div>
+                <div class="sliderscroll_main">
+                    <ul>
+                        <li>
+                            <a>
+                                <img src="images/sliderscroll_1.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ سونی
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/scrollslider_2.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ acer
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/scrollslider_3.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ Asus
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/scrollslider_4.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ clicksite.ir
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/scrollslider_5.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ lenovo
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sliderscroll_next">
+                    <span class="next" onclick="sliderscroll('left',this);"></span>
+                </div>
+
+
+            </div>
+        </div>
+
+
+       
+
+        <a class="direct_access">
+            <img src="images/direct-access1.jpg">
+        </a>
+        <a class="direct_access" style="width: 590px; margin-left: 0;">
+            <img src="images/direct-access2.jpg">
+        </a>
+        <a class="direct_access">
+            <img src="images/direct-access3.jpg">
+        </a>
+        <a class="direct_access">
+            <img src="images/direct-access4.jpg">
+        </a>
+        <a class="direct_access" style=" margin-left: 0;">
+            <img src="images/direct-access5.jpg">
+        </a>
+
+        <a class="direct_access" style=" width:590px;">
+            <img src="images/direct-access6.jpg">
+        </a>
+        <a class="direct_access" style=" margin-left: 0;">
+            <img src="images/direct-access7.jpg">
+        </a>
+
+        <div class="sliderscroll" style="margin-top: 12px; float: right;">
+
+            <h3>
+                پربازدیدترینها
+            </h3>
+            <div class="sliderscroll_content">
+                <div class="sliderscroll_prev">
+                    <span class="prev" onclick="sliderscroll('right',this);"></span>
+                </div>
+                <div class="sliderscroll_main">
+                    <ul>
+                        <li>
+                            <a>
+                                <img src="images/sliderscroll2_1.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ سونی
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/sliderscroll2_2.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ acer
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/sliderscroll2_3.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ Asus
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/sliderscroll2_4.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ clicksite.ir
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/scrollslider_5.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ lenovo
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sliderscroll_next">
+                    <span class="next" onclick="sliderscroll('left',this);"></span>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="sliderscroll" style="margin-top: 12px; float: right;">
+
+            <h3>
+                پرفروش ترینها
+            </h3>
+            <div class="sliderscroll_content">
+                <div class="sliderscroll_prev">
+                    <span class="prev" onclick="sliderscroll('right',this);"></span>
+                </div>
+                <div class="sliderscroll_main">
+                    <ul>
+                        <li>
+                            <a>
+                                <img src="images/sliderscroll2_1.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ سونی
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/sliderscroll2_2.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ acer
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/sliderscroll2_3.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ Asus
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/sliderscroll2_4.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ clicksite.ir
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/scrollslider_5.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ lenovo
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sliderscroll_next">
+                    <span class="next" onclick="sliderscroll('left',this);"></span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sliderscroll" style="margin-top: 12px; float: right;">
+
+            <h3>
+                جدیدترینها
+            </h3>
+            <div class="sliderscroll_content">
+                <div class="sliderscroll_prev">
+                    <span class="prev" onclick="sliderscroll('right',this);"></span>
+                </div>
+                <div class="sliderscroll_main">
+                    <ul>
+                        <li>
+                            <a>
+                                <img src="images/sliderscroll_1.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ سونی
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/scrollslider_2.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ acer
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/scrollslider_3.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ Asus
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/scrollslider_4.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ clicksite.ir
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a>
+                                <img src="images/scrollslider_5.jpg">
+                                <img src="images/exclusive-blue.png">
+                                <p class="yekan fontsm">
+                                    لپتاپ lenovo
+                                </p>
+                                <p class="yekan price">
+                                    ۱,۲۰۰,۰۰۰
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="sliderscroll_next">
+                    <span class="next" onclick="sliderscroll('left',this);"></span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<footer>
+    <div id="footer_top">
+        <div class="main">
+                <span class="yekan fontlg">
+                    هفت روز هفته، ۲۴ ساعته پاسخگوی شما هستیم.
+                </span>
+            <ul>
+                <li>
+                    <a class="yekan fontlg">
+                        0641852541
+                        <i style="background-position: -397px -421px;"></i>
+
+                    </a>
+                </li>
+                <li>
+                    <a class="yekan fontlg">
+                        سوالات متداول
+                        <i style="background-position: -358px -421px;"></i>
+
+                    </a>
+                </li>
+                <li>
+                    <a class="yekan fontlg">
+                        sahar.qanbari62@gmail.com
+                        <i style="background-position: -321px -421px;"></i>
+
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="footer_bottom">
+        <div class="main">
+            <div class="right">
+                <ul>
+                    <li><a class="title">راهنمای خرید از دیجی کالا</a></li>
+                    <li><a>ثبت سفارش</a></li>
+                    <li><a>رویه های ارسال سفارش</a></li>
+                    <li><a>شیوه های پرداخت</a></li>
+                </ul>
+            </div>
+            <div class="center">
+                <ul>
+                    <li><a class="title">خدمات مشتریان</a></li>
+                    <li><a>ثبت سفارش</a></li>
+                    <li><a>رویه های ارسال سفارش</a></li>
+                    <li><a>شیوه های پرداخت</a></li>
+                </ul>
+
+            </div>
+            <div class="left">
+                <p class="yekan title">
+                    اولین نفری که مطلع می شود، باشید.
+                </p>
+                <div class="email">
+                    <input type="text" placeholder="آدرس ایمیل خود را وارد کنید.">
+                    <span class="btn">
+                        تایید ایمیل
+                    </span>
+                </div>
+                <div class="social">
+                    <a>
+                        <img src="images/ios_app_bg.png">
+                    </a>
+                    <a>
+                        <img src="images/android_app_bg.png">
+                    </a>
+                    <span class="social_botton" style="background-position: -577px -621px;"></span>
+                    <span class="social_botton" style="background-position: -453px -621px;"></span>
+                    <span class="social_botton" style="background-position: -494px -621px;"></span>
+                    <span class="social_botton" style="background-position: -536px -621px;"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="js/index.js"></script>
+
+
+</body>
+</html>
